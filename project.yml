@@ -22,6 +22,18 @@ targets:
       - path: ServoGrid
     resources:
       - path: ServoGrid/Resources
+    info:
+      path: ServoGrid/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: ServoGrid
+        LSApplicationCategoryType: public.app-category.navigation
+        NSLocationWhenInUseUsageDescription: ServoGrid uses your location only to show fuel prices near you.
+        UIApplicationSupportsIndirectInputEvents: true
+        UILaunchScreen: {}
+        UIBackgroundModes:
+          - fetch
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.sidkrishnan.ServoGrid.refresh
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.sidkrishnan.ServoGrid
@@ -29,14 +41,6 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1"
         SUPPORTS_MACCATALYST: NO
-        INFOPLIST_KEY_CFBundleDisplayName: ServoGrid
-        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.navigation
-        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: ServoGrid uses your location only to show fuel prices near you.
-        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UIBackgroundModes: fetch
-        INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers: com.sidkrishnan.ServoGrid.refresh
-        GENERATE_INFOPLIST_FILE: YES
   ServoGridTests:
     type: bundle.unit-test
     platform: iOS
@@ -74,4 +78,3 @@ schemes:
           parallelizable: false
         - name: ServoGridUITests
           parallelizable: false
-
