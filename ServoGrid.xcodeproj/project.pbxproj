@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03ED08C00D0852E3730BB113 /* RestrictedJurisdictionAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD1A8ADE869C604E9F6E92 /* RestrictedJurisdictionAdapters.swift */; };
 		0592DEF4E6F64BF471EA08A6 /* PriceMovementCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE7E7DB77702AF53F6B0293 /* PriceMovementCalculator.swift */; };
 		20EA110D014DFFF1E4BE5C9F /* GridMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA00EF310C6617D4E921DC8 /* GridMonitor.swift */; };
+		2BC389DDD5E70253B054E1BA /* FuelSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB72434667E0FC829EF6BB /* FuelSourceAdapter.swift */; };
+		32BAE5752D2A7AC3AFA7C6CD /* demo-national.json in Resources */ = {isa = PBXBuildFile; fileRef = DD9236C453B70C5DB9E56FE0 /* demo-national.json */; };
 		4E8BB1B661F29E267B072C7D /* IntelligenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5DFADB2F3CB42636DD81 /* IntelligenceTests.swift */; };
 		5F76A4FC2D08DCD56D78232E /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679855AA981F9DEAEF3A1D7C /* DomainTests.swift */; };
+		6982E0DE94AECAF66CE3DE07 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E1F65F5B65732112D3E22 /* NetworkClient.swift */; };
 		6C19A89DA3BFD1317F99F86A /* SourceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AA56FD6949F84D09E8A250 /* SourceModels.swift */; };
+		797F2D758ACB7940448BC3E9 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AFA8FCF30890B6AED40C8 /* CredentialStore.swift */; };
+		81E93E375E3E55FB708A4BEC /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99EE57E963BE94F9B1FB8C /* CacheTests.swift */; };
 		A2A09C8C36DDB82DEC241288 /* FreshnessEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7157B4D701AFCDD6149F1A9D /* FreshnessEvaluator.swift */; };
+		A7B8F3C0BA8A250D3933BA66 /* SourceCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893287CF96919AD040A4434D /* SourceCatalog.swift */; };
+		A9915793F4D87D388325A9ED /* FuelCheckAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56F7D85A9C52CF11856031 /* FuelCheckAdapter.swift */; };
 		A996BC13826D40FDC07CEEC4 /* AlertEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FED5020991EA830F3EE57F /* AlertEngine.swift */; };
 		BA1881F261348077DC64DD96 /* EvaluationSuiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129EF0CD806E202E20A4E388 /* EvaluationSuiteTests.swift */; };
 		C6156D61EA018D54B95A2461 /* FuelGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE347277C13C5D377C1036 /* FuelGrade.swift */; };
+		C631CB84DBD0BA75C3D1DADF /* FixtureAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA4D0948B23BC53CED9EE3 /* FixtureAdapter.swift */; };
 		D01310508A19C37A764FB05D /* FuelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */; };
+		D0D9E4838E9B007CA329F0FF /* FuelWatchAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D22BDD936E77543F79B1D /* FuelWatchAdapter.swift */; };
+		D8D221DD0D4A545D31977641 /* SnapshotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C888777F8A87F13290A3F8 /* SnapshotCache.swift */; };
+		E825283D8E118FA2A85A2CEE /* AdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6FEF15E8DA4C3FFBC9BEE /* AdapterTests.swift */; };
 		F2BF132F962BEB64632C9937 /* RelativePriceClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652533CAE7658FBE3F96A465 /* RelativePriceClassifier.swift */; };
 		F8A5FC7930314CB88D3FB10E /* ServoGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A980793B4964781895EEDDF5 /* ServoGridApp.swift */; };
 		FE370D5474A8EA177DA73F1C /* GridBriefEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479F32E74B5E5C442953FAA /* GridBriefEngine.swift */; };
@@ -49,29 +61,69 @@
 		434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelModels.swift; sourceTree = "<group>"; };
 		4479F32E74B5E5C442953FAA /* GridBriefEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBriefEngine.swift; sourceTree = "<group>"; };
 		4EA00EF310C6617D4E921DC8 /* GridMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMonitor.swift; sourceTree = "<group>"; };
+		56C888777F8A87F13290A3F8 /* SnapshotCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotCache.swift; sourceTree = "<group>"; };
 		652533CAE7658FBE3F96A465 /* RelativePriceClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativePriceClassifier.swift; sourceTree = "<group>"; };
 		679855AA981F9DEAEF3A1D7C /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		7157B4D701AFCDD6149F1A9D /* FreshnessEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshnessEvaluator.swift; sourceTree = "<group>"; };
+		893287CF96919AD040A4434D /* SourceCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCatalog.swift; sourceTree = "<group>"; };
+		8ABA4D0948B23BC53CED9EE3 /* FixtureAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureAdapter.swift; sourceTree = "<group>"; };
 		9509554F8356985119D2DDD2 /* ServoGridTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ServoGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE7E7DB77702AF53F6B0293 /* PriceMovementCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceMovementCalculator.swift; sourceTree = "<group>"; };
+		9C99EE57E963BE94F9B1FB8C /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		9D56F7D85A9C52CF11856031 /* FuelCheckAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCheckAdapter.swift; sourceTree = "<group>"; };
 		A980793B4964781895EEDDF5 /* ServoGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServoGridApp.swift; sourceTree = "<group>"; };
+		ACCD1A8ADE869C604E9F6E92 /* RestrictedJurisdictionAdapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictedJurisdictionAdapters.swift; sourceTree = "<group>"; };
+		AD0D22BDD936E77543F79B1D /* FuelWatchAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelWatchAdapter.swift; sourceTree = "<group>"; };
+		C44AFA8FCF30890B6AED40C8 /* CredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
+		DB2E1F65F5B65732112D3E22 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DD9236C453B70C5DB9E56FE0 /* demo-national.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "demo-national.json"; sourceTree = "<group>"; };
+		F7C6FEF15E8DA4C3FFBC9BEE /* AdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterTests.swift; sourceTree = "<group>"; };
+		F7DB72434667E0FC829EF6BB /* FuelSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSourceAdapter.swift; sourceTree = "<group>"; };
 		FCBE347277C13C5D377C1036 /* FuelGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelGrade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		00DF7297DD77239C0C6E479F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				20536FDECFB87B6E2C850899 /* FuelCheck */,
+				807CF5B2A179EF34F786683B /* WA */,
+				C44AFA8FCF30890B6AED40C8 /* CredentialStore.swift */,
+				8ABA4D0948B23BC53CED9EE3 /* FixtureAdapter.swift */,
+				F7DB72434667E0FC829EF6BB /* FuelSourceAdapter.swift */,
+				DB2E1F65F5B65732112D3E22 /* NetworkClient.swift */,
+				ACCD1A8ADE869C604E9F6E92 /* RestrictedJurisdictionAdapters.swift */,
+				56C888777F8A87F13290A3F8 /* SnapshotCache.swift */,
+				893287CF96919AD040A4434D /* SourceCatalog.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		1926CF851B6D84EF6D12B8AB /* ServoGrid */ = {
 			isa = PBXGroup;
 			children = (
 				A06ABD177B201AC649141974 /* App */,
+				00DF7297DD77239C0C6E479F /* Data */,
 				A9D92D119419C30FE5D260DA /* Domain */,
 				8E7F9EC4E07B1BF3ADB77D71 /* Intelligence */,
+				D76D8D41A9571E1AA68012D3 /* Resources */,
 			);
 			path = ServoGrid;
+			sourceTree = "<group>";
+		};
+		20536FDECFB87B6E2C850899 /* FuelCheck */ = {
+			isa = PBXGroup;
+			children = (
+				9D56F7D85A9C52CF11856031 /* FuelCheckAdapter.swift */,
+			);
+			path = FuelCheck;
 			sourceTree = "<group>";
 		};
 		2CA1EDAFE26F508D8E2085B8 /* ServoGridTests */ = {
 			isa = PBXGroup;
 			children = (
+				F7C6FEF15E8DA4C3FFBC9BEE /* AdapterTests.swift */,
+				9C99EE57E963BE94F9B1FB8C /* CacheTests.swift */,
 				679855AA981F9DEAEF3A1D7C /* DomainTests.swift */,
 				129EF0CD806E202E20A4E388 /* EvaluationSuiteTests.swift */,
 				18AB5DFADB2F3CB42636DD81 /* IntelligenceTests.swift */,
@@ -89,11 +141,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4638A01783024D921127547E /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				DD9236C453B70C5DB9E56FE0 /* demo-national.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		67D5A00472208A0F455ABDE5 /* ServoGridUITests */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = ServoGridUITests;
+			sourceTree = "<group>";
+		};
+		807CF5B2A179EF34F786683B /* WA */ = {
+			isa = PBXGroup;
+			children = (
+				AD0D22BDD936E77543F79B1D /* FuelWatchAdapter.swift */,
+			);
+			path = WA;
 			sourceTree = "<group>";
 		};
 		8E7F9EC4E07B1BF3ADB77D71 /* Intelligence */ = {
@@ -127,6 +195,14 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		D76D8D41A9571E1AA68012D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4638A01783024D921127547E /* Fixtures */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E4751392BA479B4B900DA3E7 = {
 			isa = PBXGroup;
 			children = (
@@ -135,13 +211,6 @@
 				67D5A00472208A0F455ABDE5 /* ServoGridUITests */,
 				3B6B8FCD933EFE3082C874FA /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		"TEMP_1DFC5399-06F4-4E60-A25A-F4065AF87ECC" /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +257,7 @@
 			buildConfigurationList = 374D88262ABAC88B26C916AC /* Build configuration list for PBXNativeTarget "ServoGrid" */;
 			buildPhases = (
 				59EA44604ACA6531122B5332 /* Sources */,
+				8FD393E9106C2DF1A4EFA176 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -245,20 +315,40 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8FD393E9106C2DF1A4EFA176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BAE5752D2A7AC3AFA7C6CD /* demo-national.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		59EA44604ACA6531122B5332 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A996BC13826D40FDC07CEEC4 /* AlertEngine.swift in Sources */,
+				797F2D758ACB7940448BC3E9 /* CredentialStore.swift in Sources */,
+				C631CB84DBD0BA75C3D1DADF /* FixtureAdapter.swift in Sources */,
 				A2A09C8C36DDB82DEC241288 /* FreshnessEvaluator.swift in Sources */,
+				A9915793F4D87D388325A9ED /* FuelCheckAdapter.swift in Sources */,
 				C6156D61EA018D54B95A2461 /* FuelGrade.swift in Sources */,
 				D01310508A19C37A764FB05D /* FuelModels.swift in Sources */,
+				2BC389DDD5E70253B054E1BA /* FuelSourceAdapter.swift in Sources */,
+				D0D9E4838E9B007CA329F0FF /* FuelWatchAdapter.swift in Sources */,
 				FE370D5474A8EA177DA73F1C /* GridBriefEngine.swift in Sources */,
 				20EA110D014DFFF1E4BE5C9F /* GridMonitor.swift in Sources */,
+				6982E0DE94AECAF66CE3DE07 /* NetworkClient.swift in Sources */,
 				0592DEF4E6F64BF471EA08A6 /* PriceMovementCalculator.swift in Sources */,
 				F2BF132F962BEB64632C9937 /* RelativePriceClassifier.swift in Sources */,
+				03ED08C00D0852E3730BB113 /* RestrictedJurisdictionAdapters.swift in Sources */,
 				F8A5FC7930314CB88D3FB10E /* ServoGridApp.swift in Sources */,
+				D8D221DD0D4A545D31977641 /* SnapshotCache.swift in Sources */,
+				A7B8F3C0BA8A250D3933BA66 /* SourceCatalog.swift in Sources */,
 				6C19A89DA3BFD1317F99F86A /* SourceModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E825283D8E118FA2A85A2CEE /* AdapterTests.swift in Sources */,
+				81E93E375E3E55FB708A4BEC /* CacheTests.swift in Sources */,
 				5F76A4FC2D08DCD56D78232E /* DomainTests.swift in Sources */,
 				BA1881F261348077DC64DD96 /* EvaluationSuiteTests.swift in Sources */,
 				4E8BB1B661F29E267B072C7D /* IntelligenceTests.swift in Sources */,
