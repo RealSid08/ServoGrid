@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F76A4FC2D08DCD56D78232E /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679855AA981F9DEAEF3A1D7C /* DomainTests.swift */; };
+		6C19A89DA3BFD1317F99F86A /* SourceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AA56FD6949F84D09E8A250 /* SourceModels.swift */; };
+		C6156D61EA018D54B95A2461 /* FuelGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE347277C13C5D377C1036 /* FuelGrade.swift */; };
+		D01310508A19C37A764FB05D /* FuelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */; };
+		F8A5FC7930314CB88D3FB10E /* ServoGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A980793B4964781895EEDDF5 /* ServoGridApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A5F922EE21E13E1F7298D70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFDE7F2540F0963A431793B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE642984A258675F9FA96653;
+			remoteInfo = ServoGrid;
+		};
+		E9946FD2BFD8F5A9A70917DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFDE7F2540F0963A431793B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE642984A258675F9FA96653;
+			remoteInfo = ServoGrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13AF527F03388565BE5F5CDA /* ServoGridUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ServoGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		178CA7CE0861E3189C728284 /* ServoGrid.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ServoGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AA56FD6949F84D09E8A250 /* SourceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModels.swift; sourceTree = "<group>"; };
+		434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelModels.swift; sourceTree = "<group>"; };
+		679855AA981F9DEAEF3A1D7C /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		9509554F8356985119D2DDD2 /* ServoGridTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ServoGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A980793B4964781895EEDDF5 /* ServoGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServoGridApp.swift; sourceTree = "<group>"; };
+		FCBE347277C13C5D377C1036 /* FuelGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelGrade.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1926CF851B6D84EF6D12B8AB /* ServoGrid */ = {
+			isa = PBXGroup;
+			children = (
+				A06ABD177B201AC649141974 /* App */,
+				A9D92D119419C30FE5D260DA /* Domain */,
+			);
+			path = ServoGrid;
+			sourceTree = "<group>";
+		};
+		2CA1EDAFE26F508D8E2085B8 /* ServoGridTests */ = {
+			isa = PBXGroup;
+			children = (
+				679855AA981F9DEAEF3A1D7C /* DomainTests.swift */,
+			);
+			path = ServoGridTests;
+			sourceTree = "<group>";
+		};
+		3B6B8FCD933EFE3082C874FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178CA7CE0861E3189C728284 /* ServoGrid.app */,
+				9509554F8356985119D2DDD2 /* ServoGridTests.xctest */,
+				13AF527F03388565BE5F5CDA /* ServoGridUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67D5A00472208A0F455ABDE5 /* ServoGridUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServoGridUITests;
+			sourceTree = "<group>";
+		};
+		A06ABD177B201AC649141974 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A980793B4964781895EEDDF5 /* ServoGridApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A9D92D119419C30FE5D260DA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FCBE347277C13C5D377C1036 /* FuelGrade.swift */,
+				434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */,
+				33AA56FD6949F84D09E8A250 /* SourceModels.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E4751392BA479B4B900DA3E7 = {
+			isa = PBXGroup;
+			children = (
+				1926CF851B6D84EF6D12B8AB /* ServoGrid */,
+				2CA1EDAFE26F508D8E2085B8 /* ServoGridTests */,
+				67D5A00472208A0F455ABDE5 /* ServoGridUITests */,
+				3B6B8FCD933EFE3082C874FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"TEMP_E1F9F49D-4088-451E-A4C4-D55742E1B34B" /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51A40C4A45A302DBA02A414E /* ServoGridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95293F1F127C29C95C77B49 /* Build configuration list for PBXNativeTarget "ServoGridTests" */;
+			buildPhases = (
+				7FDE059FA19CAF332BEA4064 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78F64CC7B949599AC95C1C9D /* PBXTargetDependency */,
+			);
+			name = ServoGridTests;
+			packageProductDependencies = (
+			);
+			productName = ServoGridTests;
+			productReference = 9509554F8356985119D2DDD2 /* ServoGridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A47029F73716E86BE647E781 /* ServoGridUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EDF16BDC4C4C6BF9D303C4 /* Build configuration list for PBXNativeTarget "ServoGridUITests" */;
+			buildPhases = (
+				A96036DC9A25409AB0795DB7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30240F1E1BF3FB66D50BE2F9 /* PBXTargetDependency */,
+			);
+			name = ServoGridUITests;
+			packageProductDependencies = (
+			);
+			productName = ServoGridUITests;
+			productReference = 13AF527F03388565BE5F5CDA /* ServoGridUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BE642984A258675F9FA96653 /* ServoGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 374D88262ABAC88B26C916AC /* Build configuration list for PBXNativeTarget "ServoGrid" */;
+			buildPhases = (
+				59EA44604ACA6531122B5332 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServoGrid;
+			packageProductDependencies = (
+			);
+			productName = ServoGrid;
+			productReference = 178CA7CE0861E3189C728284 /* ServoGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CFDE7F2540F0963A431793B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					51A40C4A45A302DBA02A414E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					A47029F73716E86BE647E781 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE642984A258675F9FA96653;
+					};
+					BE642984A258675F9FA96653 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FB7459CC616F77FA49FFCD6E /* Build configuration list for PBXProject "ServoGrid" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E4751392BA479B4B900DA3E7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3B6B8FCD933EFE3082C874FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE642984A258675F9FA96653 /* ServoGrid */,
+				51A40C4A45A302DBA02A414E /* ServoGridTests */,
+				A47029F73716E86BE647E781 /* ServoGridUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59EA44604ACA6531122B5332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6156D61EA018D54B95A2461 /* FuelGrade.swift in Sources */,
+				D01310508A19C37A764FB05D /* FuelModels.swift in Sources */,
+				F8A5FC7930314CB88D3FB10E /* ServoGridApp.swift in Sources */,
+				6C19A89DA3BFD1317F99F86A /* SourceModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FDE059FA19CAF332BEA4064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F76A4FC2D08DCD56D78232E /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96036DC9A25409AB0795DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30240F1E1BF3FB66D50BE2F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE642984A258675F9FA96653 /* ServoGrid */;
+			targetProxy = E9946FD2BFD8F5A9A70917DC /* PBXContainerItemProxy */;
+		};
+		78F64CC7B949599AC95C1C9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE642984A258675F9FA96653 /* ServoGrid */;
+			targetProxy = 0A5F922EE21E13E1F7298D70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E27C11FC41483E4EE39987E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServoGrid.app/ServoGrid";
+			};
+			name = Release;
+		};
+		4EA571DDB36441C1E600BA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServoGrid.app/ServoGrid";
+			};
+			name = Debug;
+		};
+		53B088F0C188AC7BBFDF4C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ServoGrid;
+			};
+			name = Release;
+		};
+		5D8550BE5E58BA497A890D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers = com.sidkrishnan.ServoGrid.refresh;
+				INFOPLIST_KEY_CFBundleDisplayName = ServoGrid;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ServoGrid uses your location only to show fuel prices near you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = fetch;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGrid;
+				PRODUCT_NAME = ServoGrid;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F5CBE5D527DF08A83596FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		8D47EF596A49C9D1B16B5C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ServoGrid;
+			};
+			name = Debug;
+		};
+		A68149479E06BA74BF2EBB96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		CA6661628EC4A228F1D9F67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers = com.sidkrishnan.ServoGrid.refresh;
+				INFOPLIST_KEY_CFBundleDisplayName = ServoGrid;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ServoGrid uses your location only to show fuel prices near you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = fetch;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGrid;
+				PRODUCT_NAME = ServoGrid;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		374D88262ABAC88B26C916AC /* Build configuration list for PBXNativeTarget "ServoGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8550BE5E58BA497A890D8B /* Debug */,
+				CA6661628EC4A228F1D9F67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1EDF16BDC4C4C6BF9D303C4 /* Build configuration list for PBXNativeTarget "ServoGridUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D47EF596A49C9D1B16B5C7E /* Debug */,
+				53B088F0C188AC7BBFDF4C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D95293F1F127C29C95C77B49 /* Build configuration list for PBXNativeTarget "ServoGridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA571DDB36441C1E600BA8D /* Debug */,
+				0E27C11FC41483E4EE39987E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB7459CC616F77FA49FFCD6E /* Build configuration list for PBXProject "ServoGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68149479E06BA74BF2EBB96 /* Debug */,
+				5F5CBE5D527DF08A83596FB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CFDE7F2540F0963A431793B /* Project object */;
+}
