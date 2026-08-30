@@ -81,6 +81,20 @@ final class AdapterTests: XCTestCase {
         })
     }
 
+    func testFixtureHistoryCanSeedEvidenceBackedDemoBriefs() throws {
+        let snapshot = try FixtureAdapter.loadSnapshot(
+            resourceName: "demo-national-previous",
+            bundle: .main
+        )
+
+        XCTAssertTrue(snapshot.isDemo)
+        XCTAssertEqual(snapshot.stations.count, 3)
+        XCTAssertEqual(Set(snapshot.stations.map(\.state)), ["VIC"])
+        XCTAssertTrue(snapshot.stations.allSatisfy { station in
+            station.observations.allSatisfy { $0.fuelGrade == .unleaded91 && $0.validity == .today }
+        })
+    }
+
     private func date(_ value: String) -> Date {
         ISO8601DateFormatter().date(from: value)!
     }
