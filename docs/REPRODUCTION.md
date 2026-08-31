@@ -51,7 +51,30 @@ xcodebuild build \
 
 Actual device installation needs a configured development team, a compatible connected/unlocked device, and valid signing. Do not treat a generic compile as an install.
 
-During the recorded verification, a paired iPhone 17 Pro was reachable and in Developer Mode, but its iOS 27 build was newer than the developer disk image available to the installed Xcode 27 beta. `devicectl` could not mount the image, so installation was deliberately not attempted. Updating Xcode to a build that supports the phone's exact iOS beta is the next device step.
+During the recorded verification, the first CoreDevice attempt could not mount the developer disk image because the phone was locked. After the phone was unlocked and kept awake, the same Xcode installation mounted its services, installed ServoGrid, launched `com.sidkrishnan.ServoGrid`, and returned both an installed-app record and a running process. A generic compile alone remains insufficient evidence.
+
+The verified physical-device sequence was:
+
+```sh
+xcodebuild build \
+  -project ServoGrid.xcodeproj \
+  -scheme ServoGrid \
+  -configuration Debug \
+  -destination 'generic/platform=iOS' \
+  -derivedDataPath .build/DeviceSigned \
+  DEVELOPMENT_TEAM='<your-team-id>' \
+  CODE_SIGN_STYLE=Automatic \
+  -allowProvisioningUpdates \
+  -allowProvisioningDeviceRegistration
+xcrun devicectl device install app --device '<device-id>' \
+  .build/DeviceSigned/Build/Products/Debug-iphoneos/ServoGrid.app
+xcrun devicectl device process launch --device '<device-id>' \
+  com.sidkrishnan.ServoGrid
+xcrun devicectl device info apps --device '<device-id>' \
+  --bundle-id com.sidkrishnan.ServoGrid
+xcrun devicectl device info processes --device '<device-id>' \
+  --search ServoGrid
+```
 
 ## Install and launch the built simulator app manually
 
