@@ -1,5 +1,7 @@
 # ServoGrid
 
+[![CI](https://github.com/RealSid08/ServoGrid/actions/workflows/ci.yml/badge.svg)](https://github.com/RealSid08/ServoGrid/actions/workflows/ci.yml)
+
 ServoGrid is a native, map-first iPhone app for inspecting Australian fuel-price evidence. It makes the trust state as visible as the price: live, scheduled, delayed, cached, unavailable, or explicitly synthetic demo data.
 
 ![ServoGrid Grid on iOS 27](docs/screenshots/ios27-evidence/grid.png)

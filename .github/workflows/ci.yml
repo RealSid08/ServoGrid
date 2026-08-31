@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ios-tests:
+    name: iOS 26 unit and UI tests
+    runs-on: macos-26
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Generate Xcode project
+        run: xcodegen generate --spec project.yml
+
+      - name: Create and boot simulator
+        run: |
+          RUNTIME_ID=$(xcrun simctl list runtimes available -j | python3 -c 'import json,sys; values=[item["identifier"] for item in json.load(sys.stdin)["runtimes"] if item.get("isAvailable") and item.get("platform") == "iOS"]; print(values[-1])')
+          DEVICE_TYPE_ID=$(xcrun simctl list devicetypes -j | python3 -c 'import json,sys; values=[item for item in json.load(sys.stdin)["devicetypes"] if item["name"].startswith("iPhone")]; preferred=next((item for item in values if item["name"] == "iPhone 17 Pro"), values[-1]); print(preferred["identifier"])')
+          SIMULATOR_UDID=$(xcrun simctl create ServoGrid-CI "$DEVICE_TYPE_ID" "$RUNTIME_ID")
+          xcrun simctl boot "$SIMULATOR_UDID"
+          xcrun simctl bootstatus "$SIMULATOR_UDID" -b
+          echo "SIMULATOR_UDID=$SIMULATOR_UDID" >> "$GITHUB_ENV"
+
+      - name: Run all unit, integration, and UI tests
+        run: |
+          mkdir -p TestResults
+          xcodebuild test \
+            -project ServoGrid.xcodeproj \
+            -scheme ServoGrid \
+            -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
+            -resultBundlePath TestResults/ServoGrid.xcresult \
+            -collect-test-diagnostics never \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Upload test result bundle
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ServoGrid-test-results
+          path: TestResults/ServoGrid.xcresult
+          retention-days: 7
+
+  ios-27-compatibility:
+    name: iOS 27 source compatibility
+    runs-on: xcode-27
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Generate Xcode project
+        run: xcodegen generate --spec project.yml
+
+      - name: Build against the iOS 27 SDK
+        run: |
+          xcodebuild build-for-testing \
+            -project ServoGrid.xcodeproj \
+            -scheme ServoGrid \
+            -destination "generic/platform=iOS Simulator" \
+            CODE_SIGNING_ALLOWED=NO
