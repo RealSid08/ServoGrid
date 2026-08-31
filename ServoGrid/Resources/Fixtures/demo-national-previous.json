@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-08-29T08:00:00Z",
+  "schemaVersion": 1,
+  "source": {
+    "attribution": "Synthetic ServoGrid demo data — not a live fuel source",
+    "coverage": "demo",
+    "id": "fixture-national",
+    "jurisdiction": "AU",
+    "licenceName": "Project fixture",
+    "name": "ServoGrid evaluation fixtures",
+    "sourceURL": "https://example.invalid/servogrid-fixture"
+  },
+  "stations": [
+    {
+      "address": "1 Demo Road",
+      "brand": "Grid Independent",
+      "id": "demo-melbourne-west",
+      "latitude": -37.8179,
+      "longitude": 144.8897,
+      "name": "West Gate Demo Servo",
+      "observations": [
+        {
+          "availability": "available",
+          "checkedAt": "2026-08-29T08:00:00Z",
+          "fuelGrade": "unleaded91",
+          "id": "demo-melbourne-west-u91-previous",
+          "observedAt": "2026-08-29T08:00:00Z",
+          "priceCentsPerLitre": 184.9,
+          "sourceDatasetAt": "2026-08-29T07:55:00Z",
+          "sourceEventAt": "2026-08-29T07:45:00Z",
+          "stationID": "demo-melbourne-west",
+          "validity": "today"
+        }
+      ],
+      "postcode": "3015",
+      "sourceStationID": "demo-melbourne-west",
+      "state": "VIC",
+      "suburb": "Yarraville"
+    },
+    {
+      "address": "20 Demo Highway",
+      "brand": "Grid Petroleum",
+      "id": "demo-melbourne-north",
+      "latitude": -37.7208,
+      "longitude": 144.9633,
+      "name": "Northern Grid Demo",
+      "observations": [
+        {
+          "availability": "available",
+          "checkedAt": "2026-08-29T08:00:00Z",
+          "fuelGrade": "unleaded91",
+          "id": "demo-melbourne-north-u91-previous",
+          "observedAt": "2026-08-29T08:00:00Z",
+          "priceCentsPerLitre": 187.7,
+          "sourceDatasetAt": "2026-08-29T07:55:00Z",
+          "sourceEventAt": "2026-08-29T07:40:00Z",
+          "stationID": "demo-melbourne-north",
+          "validity": "today"
+        }
+      ],
+      "postcode": "3074",
+      "sourceStationID": "demo-melbourne-north",
+      "state": "VIC",
+      "suburb": "Thomastown"
+    },
+    {
+      "address": "88 Demo Parade",
+      "brand": "Grid Energy",
+      "id": "demo-melbourne-east",
+      "latitude": -37.823,
+      "longitude": 145.181,
+      "name": "Eastern Grid Demo",
+      "observations": [
+        {
+          "availability": "available",
+          "checkedAt": "2026-08-29T08:00:00Z",
+          "fuelGrade": "unleaded91",
+          "id": "demo-melbourne-east-u91-previous",
+          "observedAt": "2026-08-29T08:00:00Z",
+          "priceCentsPerLitre": 190.3,
+          "sourceDatasetAt": "2026-08-29T07:55:00Z",
+          "sourceEventAt": "2026-08-29T07:42:00Z",
+          "stationID": "demo-melbourne-east",
+          "validity": "today"
+        }
+      ],
+      "postcode": "3130",
+      "sourceStationID": "demo-melbourne-east",
+      "state": "VIC",
+      "suburb": "Blackburn"
+    }
+  ]
+}

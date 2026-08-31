@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03ED08C00D0852E3730BB113 /* RestrictedJurisdictionAdapters.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD1A8ADE869C604E9F6E92 /* RestrictedJurisdictionAdapters.swift */; };
+		0592DEF4E6F64BF471EA08A6 /* PriceMovementCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE7E7DB77702AF53F6B0293 /* PriceMovementCalculator.swift */; };
+		11B378B8C201C41B236B0085 /* BackgroundRefreshService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A60FC2CEE98BC87D2D0D3 /* BackgroundRefreshService.swift */; };
+		1C9740BEC35CD2B3DACD3B7F /* GridScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C15AD7AFE0A5A393A5F2 /* GridScreen.swift */; };
+		20EA110D014DFFF1E4BE5C9F /* GridMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA00EF310C6617D4E921DC8 /* GridMonitor.swift */; };
+		2230459017088DE46A06DCA8 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833D68BF639C03BC52ACB2D /* AppStore.swift */; };
+		2BC389DDD5E70253B054E1BA /* FuelSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB72434667E0FC829EF6BB /* FuelSourceAdapter.swift */; };
+		32BAE5752D2A7AC3AFA7C6CD /* demo-national.json in Resources */ = {isa = PBXBuildFile; fileRef = DD9236C453B70C5DB9E56FE0 /* demo-national.json */; };
+		386A31A1B0C7CA0A45DB1B38 /* PresentationFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA7AA56B15ED0BD83BB300 /* PresentationFormat.swift */; };
+		483F2521113C0905F564B409 /* GridChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B733992F5A351A439F8549 /* GridChrome.swift */; };
+		4D58CB86A44D2ABC31C90031 /* AlertSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E60A1F4ACF4C04BD35B131 /* AlertSetupView.swift */; };
+		4E8BB1B661F29E267B072C7D /* IntelligenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5DFADB2F3CB42636DD81 /* IntelligenceTests.swift */; };
+		4EC301B95536AFF51AFA98D1 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50C771F9B2AD5291D34BC7 /* RootTabView.swift */; };
+		50A94899A59BFCD3EDB6BED7 /* AccessibilityID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F574D7E6F023C7CB4985BB4 /* AccessibilityID.swift */; };
+		5D53D8FFD74A752E5089700F /* demo-national-previous.json in Resources */ = {isa = PBXBuildFile; fileRef = 377C85DD621171633506C33A /* demo-national-previous.json */; };
+		5F76A4FC2D08DCD56D78232E /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679855AA981F9DEAEF3A1D7C /* DomainTests.swift */; };
+		648D0F290386765A4CCF4881 /* StationDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BFA1D801F9C734CFE59FC /* StationDetailSheet.swift */; };
+		6982E0DE94AECAF66CE3DE07 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2E1F65F5B65732112D3E22 /* NetworkClient.swift */; };
+		6C19A89DA3BFD1317F99F86A /* SourceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AA56FD6949F84D09E8A250 /* SourceModels.swift */; };
+		6F6DF029C8E67DE36988AE0C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D768F57869A1708E32157B0 /* NotificationService.swift */; };
+		797F2D758ACB7940448BC3E9 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AFA8FCF30890B6AED40C8 /* CredentialStore.swift */; };
+		7DC587AE33AB7C4B1FC85807 /* GridPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A79966DFD02A9180BE87FD5 /* GridPalette.swift */; };
+		8063B6329E3EA0094E6315E8 /* FuelMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6BCD4455C6FB2477AF54A0 /* FuelMapView.swift */; };
+		81E93E375E3E55FB708A4BEC /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99EE57E963BE94F9B1FB8C /* CacheTests.swift */; };
+		8D5F77461BBABD925021F385 /* BriefsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9701ADE7C74333D2CD03E8 /* BriefsScreen.swift */; };
+		A2A09C8C36DDB82DEC241288 /* FreshnessEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7157B4D701AFCDD6149F1A9D /* FreshnessEvaluator.swift */; };
+		A7B8F3C0BA8A250D3933BA66 /* SourceCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893287CF96919AD040A4434D /* SourceCatalog.swift */; };
+		A9915793F4D87D388325A9ED /* FuelCheckAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56F7D85A9C52CF11856031 /* FuelCheckAdapter.swift */; };
+		A996BC13826D40FDC07CEEC4 /* AlertEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FED5020991EA830F3EE57F /* AlertEngine.swift */; };
+		A9FDBDB8292856F3DD556652 /* MonitorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F6B754F8AB90C39BECE9D /* MonitorScreen.swift */; };
+		BA1881F261348077DC64DD96 /* EvaluationSuiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129EF0CD806E202E20A4E388 /* EvaluationSuiteTests.swift */; };
+		BDA816C090EBC190B48763F6 /* NotificationFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87271E5636F8149C5F8A2F4 /* NotificationFlowTests.swift */; };
+		BF8473008B41C0B7643EDCC3 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2BE6785141E2E9951C2424 /* AppStoreTests.swift */; };
+		C6156D61EA018D54B95A2461 /* FuelGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE347277C13C5D377C1036 /* FuelGrade.swift */; };
+		C631CB84DBD0BA75C3D1DADF /* FixtureAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA4D0948B23BC53CED9EE3 /* FixtureAdapter.swift */; };
+		D01310508A19C37A764FB05D /* FuelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */; };
+		D0D9E4838E9B007CA329F0FF /* FuelWatchAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D22BDD936E77543F79B1D /* FuelWatchAdapter.swift */; };
+		D478F46DE5CE4978F7395369 /* CoreFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E318D7A484D27560016D0 /* CoreFlowUITests.swift */; };
+		D8D221DD0D4A545D31977641 /* SnapshotCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C888777F8A87F13290A3F8 /* SnapshotCache.swift */; };
+		D9064777AC0D9C6B985BF8BC /* MapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69C3A82BC827ED2FFF6C5E /* MapAnnotations.swift */; };
+		E3FF561ACC0AAB7E365EFC33 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54993ECDE45799B6043C2A /* LocationService.swift */; };
+		E825283D8E118FA2A85A2CEE /* AdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6FEF15E8DA4C3FFBC9BEE /* AdapterTests.swift */; };
+		EC38E227B0BD04EBEBB483D9 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD17ED797AD4F937479A7BF /* SettingsScreen.swift */; };
+		F2BF132F962BEB64632C9937 /* RelativePriceClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652533CAE7658FBE3F96A465 /* RelativePriceClassifier.swift */; };
+		F35CB247AE2F08A83DF3B68B /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2317F5B00C0A5BA6C098A0 /* AppEnvironment.swift */; };
+		F8A5FC7930314CB88D3FB10E /* ServoGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A980793B4964781895EEDDF5 /* ServoGridApp.swift */; };
+		FE370D5474A8EA177DA73F1C /* GridBriefEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479F32E74B5E5C442953FAA /* GridBriefEngine.swift */; };
+		FE94DECA9FC65C0D526F10C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD88D42A99A72AB29FA1ECD1 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A5F922EE21E13E1F7298D70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFDE7F2540F0963A431793B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE642984A258675F9FA96653;
+			remoteInfo = ServoGrid;
+		};
+		E9946FD2BFD8F5A9A70917DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CFDE7F2540F0963A431793B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE642984A258675F9FA96653;
+			remoteInfo = ServoGrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028BFA1D801F9C734CFE59FC /* StationDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailSheet.swift; sourceTree = "<group>"; };
+		0D768F57869A1708E32157B0 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		129EF0CD806E202E20A4E388 /* EvaluationSuiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationSuiteTests.swift; sourceTree = "<group>"; };
+		12FED5020991EA830F3EE57F /* AlertEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertEngine.swift; sourceTree = "<group>"; };
+		13AF527F03388565BE5F5CDA /* ServoGridUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ServoGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		178CA7CE0861E3189C728284 /* ServoGrid.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ServoGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AB5DFADB2F3CB42636DD81 /* IntelligenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelligenceTests.swift; sourceTree = "<group>"; };
+		1D50C771F9B2AD5291D34BC7 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		2C69C3A82BC827ED2FFF6C5E /* MapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotations.swift; sourceTree = "<group>"; };
+		33AA56FD6949F84D09E8A250 /* SourceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModels.swift; sourceTree = "<group>"; };
+		377C85DD621171633506C33A /* demo-national-previous.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "demo-national-previous.json"; sourceTree = "<group>"; };
+		434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelModels.swift; sourceTree = "<group>"; };
+		4479F32E74B5E5C442953FAA /* GridBriefEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridBriefEngine.swift; sourceTree = "<group>"; };
+		4A79966DFD02A9180BE87FD5 /* GridPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridPalette.swift; sourceTree = "<group>"; };
+		4B2BE6785141E2E9951C2424 /* AppStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
+		4EA00EF310C6617D4E921DC8 /* GridMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridMonitor.swift; sourceTree = "<group>"; };
+		56C888777F8A87F13290A3F8 /* SnapshotCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotCache.swift; sourceTree = "<group>"; };
+		5C6E318D7A484D27560016D0 /* CoreFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFlowUITests.swift; sourceTree = "<group>"; };
+		5CD17ED797AD4F937479A7BF /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		63A7C15AD7AFE0A5A393A5F2 /* GridScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridScreen.swift; sourceTree = "<group>"; };
+		652533CAE7658FBE3F96A465 /* RelativePriceClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativePriceClassifier.swift; sourceTree = "<group>"; };
+		679855AA981F9DEAEF3A1D7C /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		7157B4D701AFCDD6149F1A9D /* FreshnessEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshnessEvaluator.swift; sourceTree = "<group>"; };
+		75CA7AA56B15ED0BD83BB300 /* PresentationFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationFormat.swift; sourceTree = "<group>"; };
+		7833D68BF639C03BC52ACB2D /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		7F574D7E6F023C7CB4985BB4 /* AccessibilityID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityID.swift; sourceTree = "<group>"; };
+		893287CF96919AD040A4434D /* SourceCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCatalog.swift; sourceTree = "<group>"; };
+		8A6BCD4455C6FB2477AF54A0 /* FuelMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMapView.swift; sourceTree = "<group>"; };
+		8ABA4D0948B23BC53CED9EE3 /* FixtureAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureAdapter.swift; sourceTree = "<group>"; };
+		8E54993ECDE45799B6043C2A /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		9509554F8356985119D2DDD2 /* ServoGridTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ServoGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE7E7DB77702AF53F6B0293 /* PriceMovementCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceMovementCalculator.swift; sourceTree = "<group>"; };
+		9C99EE57E963BE94F9B1FB8C /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		9D3F6B754F8AB90C39BECE9D /* MonitorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorScreen.swift; sourceTree = "<group>"; };
+		9D56F7D85A9C52CF11856031 /* FuelCheckAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCheckAdapter.swift; sourceTree = "<group>"; };
+		9F2317F5B00C0A5BA6C098A0 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		A87271E5636F8149C5F8A2F4 /* NotificationFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFlowTests.swift; sourceTree = "<group>"; };
+		A980793B4964781895EEDDF5 /* ServoGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServoGridApp.swift; sourceTree = "<group>"; };
+		ACCD1A8ADE869C604E9F6E92 /* RestrictedJurisdictionAdapters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictedJurisdictionAdapters.swift; sourceTree = "<group>"; };
+		AD0D22BDD936E77543F79B1D /* FuelWatchAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelWatchAdapter.swift; sourceTree = "<group>"; };
+		B37CC395E0261C4540FB1733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C3B733992F5A351A439F8549 /* GridChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridChrome.swift; sourceTree = "<group>"; };
+		C44AFA8FCF30890B6AED40C8 /* CredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
+		CD88D42A99A72AB29FA1ECD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB2E1F65F5B65732112D3E22 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DD9236C453B70C5DB9E56FE0 /* demo-national.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "demo-national.json"; sourceTree = "<group>"; };
+		E2E60A1F4ACF4C04BD35B131 /* AlertSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSetupView.swift; sourceTree = "<group>"; };
+		F57A60FC2CEE98BC87D2D0D3 /* BackgroundRefreshService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRefreshService.swift; sourceTree = "<group>"; };
+		F7C6FEF15E8DA4C3FFBC9BEE /* AdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterTests.swift; sourceTree = "<group>"; };
+		F7DB72434667E0FC829EF6BB /* FuelSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSourceAdapter.swift; sourceTree = "<group>"; };
+		FCBE347277C13C5D377C1036 /* FuelGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelGrade.swift; sourceTree = "<group>"; };
+		FD9701ADE7C74333D2CD03E8 /* BriefsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefsScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00DF7297DD77239C0C6E479F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				20536FDECFB87B6E2C850899 /* FuelCheck */,
+				807CF5B2A179EF34F786683B /* WA */,
+				C44AFA8FCF30890B6AED40C8 /* CredentialStore.swift */,
+				8ABA4D0948B23BC53CED9EE3 /* FixtureAdapter.swift */,
+				F7DB72434667E0FC829EF6BB /* FuelSourceAdapter.swift */,
+				DB2E1F65F5B65732112D3E22 /* NetworkClient.swift */,
+				ACCD1A8ADE869C604E9F6E92 /* RestrictedJurisdictionAdapters.swift */,
+				56C888777F8A87F13290A3F8 /* SnapshotCache.swift */,
+				893287CF96919AD040A4434D /* SourceCatalog.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1926CF851B6D84EF6D12B8AB /* ServoGrid */ = {
+			isa = PBXGroup;
+			children = (
+				A06ABD177B201AC649141974 /* App */,
+				00DF7297DD77239C0C6E479F /* Data */,
+				6495246E9CF3D3CED799830A /* DesignSystem */,
+				A9D92D119419C30FE5D260DA /* Domain */,
+				718C3A7FC2CE6472672B4115 /* Features */,
+				8E7F9EC4E07B1BF3ADB77D71 /* Intelligence */,
+				D76D8D41A9571E1AA68012D3 /* Resources */,
+				AB5899AD9A4A49F17F5CD3A9 /* Services */,
+			);
+			path = ServoGrid;
+			sourceTree = "<group>";
+		};
+		20536FDECFB87B6E2C850899 /* FuelCheck */ = {
+			isa = PBXGroup;
+			children = (
+				9D56F7D85A9C52CF11856031 /* FuelCheckAdapter.swift */,
+			);
+			path = FuelCheck;
+			sourceTree = "<group>";
+		};
+		2CA1EDAFE26F508D8E2085B8 /* ServoGridTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7C6FEF15E8DA4C3FFBC9BEE /* AdapterTests.swift */,
+				4B2BE6785141E2E9951C2424 /* AppStoreTests.swift */,
+				9C99EE57E963BE94F9B1FB8C /* CacheTests.swift */,
+				679855AA981F9DEAEF3A1D7C /* DomainTests.swift */,
+				129EF0CD806E202E20A4E388 /* EvaluationSuiteTests.swift */,
+				18AB5DFADB2F3CB42636DD81 /* IntelligenceTests.swift */,
+				A87271E5636F8149C5F8A2F4 /* NotificationFlowTests.swift */,
+			);
+			path = ServoGridTests;
+			sourceTree = "<group>";
+		};
+		3B6B8FCD933EFE3082C874FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178CA7CE0861E3189C728284 /* ServoGrid.app */,
+				9509554F8356985119D2DDD2 /* ServoGridTests.xctest */,
+				13AF527F03388565BE5F5CDA /* ServoGridUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F05F7B1A0E7FCCF6C933EE6 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				9D3F6B754F8AB90C39BECE9D /* MonitorScreen.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		4638A01783024D921127547E /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				377C85DD621171633506C33A /* demo-national-previous.json */,
+				DD9236C453B70C5DB9E56FE0 /* demo-national.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		6495246E9CF3D3CED799830A /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				7F574D7E6F023C7CB4985BB4 /* AccessibilityID.swift */,
+				C3B733992F5A351A439F8549 /* GridChrome.swift */,
+				4A79966DFD02A9180BE87FD5 /* GridPalette.swift */,
+				75CA7AA56B15ED0BD83BB300 /* PresentationFormat.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		67D5A00472208A0F455ABDE5 /* ServoGridUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C6E318D7A484D27560016D0 /* CoreFlowUITests.swift */,
+			);
+			path = ServoGridUITests;
+			sourceTree = "<group>";
+		};
+		718C3A7FC2CE6472672B4115 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F0E11E0EEE38E98661A9A57B /* Briefs */,
+				EED29324B14C4058AA0244E9 /* Grid */,
+				3F05F7B1A0E7FCCF6C933EE6 /* Monitor */,
+				D4BAFEF8DD60214B4E37121C /* Root */,
+				E404F7212F56D68270ECCE52 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		807CF5B2A179EF34F786683B /* WA */ = {
+			isa = PBXGroup;
+			children = (
+				AD0D22BDD936E77543F79B1D /* FuelWatchAdapter.swift */,
+			);
+			path = WA;
+			sourceTree = "<group>";
+		};
+		8E7F9EC4E07B1BF3ADB77D71 /* Intelligence */ = {
+			isa = PBXGroup;
+			children = (
+				12FED5020991EA830F3EE57F /* AlertEngine.swift */,
+				7157B4D701AFCDD6149F1A9D /* FreshnessEvaluator.swift */,
+				4479F32E74B5E5C442953FAA /* GridBriefEngine.swift */,
+				4EA00EF310C6617D4E921DC8 /* GridMonitor.swift */,
+				9AE7E7DB77702AF53F6B0293 /* PriceMovementCalculator.swift */,
+				652533CAE7658FBE3F96A465 /* RelativePriceClassifier.swift */,
+			);
+			path = Intelligence;
+			sourceTree = "<group>";
+		};
+		A06ABD177B201AC649141974 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9F2317F5B00C0A5BA6C098A0 /* AppEnvironment.swift */,
+				7833D68BF639C03BC52ACB2D /* AppStore.swift */,
+				A980793B4964781895EEDDF5 /* ServoGridApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A9D92D119419C30FE5D260DA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FCBE347277C13C5D377C1036 /* FuelGrade.swift */,
+				434C9AEBC62FF4BE0AAC8006 /* FuelModels.swift */,
+				33AA56FD6949F84D09E8A250 /* SourceModels.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AB5899AD9A4A49F17F5CD3A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F57A60FC2CEE98BC87D2D0D3 /* BackgroundRefreshService.swift */,
+				8E54993ECDE45799B6043C2A /* LocationService.swift */,
+				0D768F57869A1708E32157B0 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4BAFEF8DD60214B4E37121C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1D50C771F9B2AD5291D34BC7 /* RootTabView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		D76D8D41A9571E1AA68012D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4638A01783024D921127547E /* Fixtures */,
+				CD88D42A99A72AB29FA1ECD1 /* Assets.xcassets */,
+				B37CC395E0261C4540FB1733 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E404F7212F56D68270ECCE52 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5CD17ED797AD4F937479A7BF /* SettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E4751392BA479B4B900DA3E7 = {
+			isa = PBXGroup;
+			children = (
+				1926CF851B6D84EF6D12B8AB /* ServoGrid */,
+				2CA1EDAFE26F508D8E2085B8 /* ServoGridTests */,
+				67D5A00472208A0F455ABDE5 /* ServoGridUITests */,
+				3B6B8FCD933EFE3082C874FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED29324B14C4058AA0244E9 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				E2E60A1F4ACF4C04BD35B131 /* AlertSetupView.swift */,
+				8A6BCD4455C6FB2477AF54A0 /* FuelMapView.swift */,
+				63A7C15AD7AFE0A5A393A5F2 /* GridScreen.swift */,
+				2C69C3A82BC827ED2FFF6C5E /* MapAnnotations.swift */,
+				028BFA1D801F9C734CFE59FC /* StationDetailSheet.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		F0E11E0EEE38E98661A9A57B /* Briefs */ = {
+			isa = PBXGroup;
+			children = (
+				FD9701ADE7C74333D2CD03E8 /* BriefsScreen.swift */,
+			);
+			path = Briefs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51A40C4A45A302DBA02A414E /* ServoGridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95293F1F127C29C95C77B49 /* Build configuration list for PBXNativeTarget "ServoGridTests" */;
+			buildPhases = (
+				7FDE059FA19CAF332BEA4064 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78F64CC7B949599AC95C1C9D /* PBXTargetDependency */,
+			);
+			name = ServoGridTests;
+			packageProductDependencies = (
+			);
+			productName = ServoGridTests;
+			productReference = 9509554F8356985119D2DDD2 /* ServoGridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A47029F73716E86BE647E781 /* ServoGridUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EDF16BDC4C4C6BF9D303C4 /* Build configuration list for PBXNativeTarget "ServoGridUITests" */;
+			buildPhases = (
+				A96036DC9A25409AB0795DB7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30240F1E1BF3FB66D50BE2F9 /* PBXTargetDependency */,
+			);
+			name = ServoGridUITests;
+			packageProductDependencies = (
+			);
+			productName = ServoGridUITests;
+			productReference = 13AF527F03388565BE5F5CDA /* ServoGridUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BE642984A258675F9FA96653 /* ServoGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 374D88262ABAC88B26C916AC /* Build configuration list for PBXNativeTarget "ServoGrid" */;
+			buildPhases = (
+				59EA44604ACA6531122B5332 /* Sources */,
+				8FD393E9106C2DF1A4EFA176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServoGrid;
+			packageProductDependencies = (
+			);
+			productName = ServoGrid;
+			productReference = 178CA7CE0861E3189C728284 /* ServoGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CFDE7F2540F0963A431793B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					51A40C4A45A302DBA02A414E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					A47029F73716E86BE647E781 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE642984A258675F9FA96653;
+					};
+					BE642984A258675F9FA96653 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FB7459CC616F77FA49FFCD6E /* Build configuration list for PBXProject "ServoGrid" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E4751392BA479B4B900DA3E7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3B6B8FCD933EFE3082C874FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE642984A258675F9FA96653 /* ServoGrid */,
+				51A40C4A45A302DBA02A414E /* ServoGridTests */,
+				A47029F73716E86BE647E781 /* ServoGridUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FD393E9106C2DF1A4EFA176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE94DECA9FC65C0D526F10C8 /* Assets.xcassets in Resources */,
+				5D53D8FFD74A752E5089700F /* demo-national-previous.json in Resources */,
+				32BAE5752D2A7AC3AFA7C6CD /* demo-national.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59EA44604ACA6531122B5332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A94899A59BFCD3EDB6BED7 /* AccessibilityID.swift in Sources */,
+				A996BC13826D40FDC07CEEC4 /* AlertEngine.swift in Sources */,
+				4D58CB86A44D2ABC31C90031 /* AlertSetupView.swift in Sources */,
+				F35CB247AE2F08A83DF3B68B /* AppEnvironment.swift in Sources */,
+				2230459017088DE46A06DCA8 /* AppStore.swift in Sources */,
+				11B378B8C201C41B236B0085 /* BackgroundRefreshService.swift in Sources */,
+				8D5F77461BBABD925021F385 /* BriefsScreen.swift in Sources */,
+				797F2D758ACB7940448BC3E9 /* CredentialStore.swift in Sources */,
+				C631CB84DBD0BA75C3D1DADF /* FixtureAdapter.swift in Sources */,
+				A2A09C8C36DDB82DEC241288 /* FreshnessEvaluator.swift in Sources */,
+				A9915793F4D87D388325A9ED /* FuelCheckAdapter.swift in Sources */,
+				C6156D61EA018D54B95A2461 /* FuelGrade.swift in Sources */,
+				8063B6329E3EA0094E6315E8 /* FuelMapView.swift in Sources */,
+				D01310508A19C37A764FB05D /* FuelModels.swift in Sources */,
+				2BC389DDD5E70253B054E1BA /* FuelSourceAdapter.swift in Sources */,
+				D0D9E4838E9B007CA329F0FF /* FuelWatchAdapter.swift in Sources */,
+				FE370D5474A8EA177DA73F1C /* GridBriefEngine.swift in Sources */,
+				483F2521113C0905F564B409 /* GridChrome.swift in Sources */,
+				20EA110D014DFFF1E4BE5C9F /* GridMonitor.swift in Sources */,
+				7DC587AE33AB7C4B1FC85807 /* GridPalette.swift in Sources */,
+				1C9740BEC35CD2B3DACD3B7F /* GridScreen.swift in Sources */,
+				E3FF561ACC0AAB7E365EFC33 /* LocationService.swift in Sources */,
+				D9064777AC0D9C6B985BF8BC /* MapAnnotations.swift in Sources */,
+				A9FDBDB8292856F3DD556652 /* MonitorScreen.swift in Sources */,
+				6982E0DE94AECAF66CE3DE07 /* NetworkClient.swift in Sources */,
+				6F6DF029C8E67DE36988AE0C /* NotificationService.swift in Sources */,
+				386A31A1B0C7CA0A45DB1B38 /* PresentationFormat.swift in Sources */,
+				0592DEF4E6F64BF471EA08A6 /* PriceMovementCalculator.swift in Sources */,
+				F2BF132F962BEB64632C9937 /* RelativePriceClassifier.swift in Sources */,
+				03ED08C00D0852E3730BB113 /* RestrictedJurisdictionAdapters.swift in Sources */,
+				4EC301B95536AFF51AFA98D1 /* RootTabView.swift in Sources */,
+				F8A5FC7930314CB88D3FB10E /* ServoGridApp.swift in Sources */,
+				EC38E227B0BD04EBEBB483D9 /* SettingsScreen.swift in Sources */,
+				D8D221DD0D4A545D31977641 /* SnapshotCache.swift in Sources */,
+				A7B8F3C0BA8A250D3933BA66 /* SourceCatalog.swift in Sources */,
+				6C19A89DA3BFD1317F99F86A /* SourceModels.swift in Sources */,
+				648D0F290386765A4CCF4881 /* StationDetailSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FDE059FA19CAF332BEA4064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E825283D8E118FA2A85A2CEE /* AdapterTests.swift in Sources */,
+				BF8473008B41C0B7643EDCC3 /* AppStoreTests.swift in Sources */,
+				81E93E375E3E55FB708A4BEC /* CacheTests.swift in Sources */,
+				5F76A4FC2D08DCD56D78232E /* DomainTests.swift in Sources */,
+				BA1881F261348077DC64DD96 /* EvaluationSuiteTests.swift in Sources */,
+				4E8BB1B661F29E267B072C7D /* IntelligenceTests.swift in Sources */,
+				BDA816C090EBC190B48763F6 /* NotificationFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96036DC9A25409AB0795DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D478F46DE5CE4978F7395369 /* CoreFlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30240F1E1BF3FB66D50BE2F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE642984A258675F9FA96653 /* ServoGrid */;
+			targetProxy = E9946FD2BFD8F5A9A70917DC /* PBXContainerItemProxy */;
+		};
+		78F64CC7B949599AC95C1C9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE642984A258675F9FA96653 /* ServoGrid */;
+			targetProxy = 0A5F922EE21E13E1F7298D70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E27C11FC41483E4EE39987E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServoGrid.app/ServoGrid";
+			};
+			name = Release;
+		};
+		4EA571DDB36441C1E600BA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServoGrid.app/ServoGrid";
+			};
+			name = Debug;
+		};
+		53B088F0C188AC7BBFDF4C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ServoGrid;
+			};
+			name = Release;
+		};
+		5D8550BE5E58BA497A890D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ServoGrid/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGrid;
+				PRODUCT_NAME = ServoGrid;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F5CBE5D527DF08A83596FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		8D47EF596A49C9D1B16B5C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGridUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ServoGrid;
+			};
+			name = Debug;
+		};
+		A68149479E06BA74BF2EBB96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		CA6661628EC4A228F1D9F67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ServoGrid/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sidkrishnan.ServoGrid;
+				PRODUCT_NAME = ServoGrid;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		374D88262ABAC88B26C916AC /* Build configuration list for PBXNativeTarget "ServoGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8550BE5E58BA497A890D8B /* Debug */,
+				CA6661628EC4A228F1D9F67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1EDF16BDC4C4C6BF9D303C4 /* Build configuration list for PBXNativeTarget "ServoGridUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D47EF596A49C9D1B16B5C7E /* Debug */,
+				53B088F0C188AC7BBFDF4C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D95293F1F127C29C95C77B49 /* Build configuration list for PBXNativeTarget "ServoGridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA571DDB36441C1E600BA8D /* Debug */,
+				0E27C11FC41483E4EE39987E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB7459CC616F77FA49FFCD6E /* Build configuration list for PBXProject "ServoGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A68149479E06BA74BF2EBB96 /* Debug */,
+				5F5CBE5D527DF08A83596FB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CFDE7F2540F0963A431793B /* Project object */;
+}
